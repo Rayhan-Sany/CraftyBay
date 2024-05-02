@@ -1,3 +1,4 @@
+import 'package:crafty_bay/presentation/screens/auth_screens/otp_verification_screen.dart';
 import 'package:crafty_bay/presentation/utils/assets_path.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -15,7 +16,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   Future<void>_moveToNextScreen()async{
    await Future.delayed(const Duration(seconds:3));
-    Get.to(()=>const HomeScreen());
+    Get.to(()=>const OtpVerificationScreen(email: ''));
   }
  @override
   void initState() {

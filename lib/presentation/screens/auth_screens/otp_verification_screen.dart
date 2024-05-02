@@ -22,7 +22,7 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Get.find<OtpScreenController>().resendButton();
+    Get.find<OtpScreenController>().getResendButton();
   }
 
   @override
@@ -63,7 +63,7 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
                       return otpScreenController.isResendButtonAvailable
                           ? TextButton(
                         onPressed: () {
-                         otpScreenController.resendButton();
+                         otpScreenController.getResendButton();
                         },
                         child: const Text('Resend Code'),
                       )

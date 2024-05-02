@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 class OtpScreenController extends GetxController{
   int counter = 10;
   bool isResendButtonAvailable = false;
-  Future<void> resendButton() async {
+  Future<void> getResendButton() async {
     if (counter == 0) {
       isResendButtonAvailable = true;
       update();
@@ -14,6 +14,6 @@ class OtpScreenController extends GetxController{
     await Future.delayed(const Duration(seconds: 1));
     counter--;
     update();
-    resendButton();
+    getResendButton();
   }
 }
