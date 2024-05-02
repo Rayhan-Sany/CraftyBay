@@ -1,7 +1,7 @@
-import 'package:crafty_bay/presentation/widgets/all_theme_data.dart';
+import 'package:crafty_bay/presentation/utils/app_theme/all_theme_data.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/app_color.dart';
+import '../app_color.dart';
 
 class AppThemeData{
   static  ThemeData myAppThemeData(){
@@ -9,7 +9,8 @@ class AppThemeData{
       colorSchemeSeed:AppColor.primaryColor,
       progressIndicatorTheme: AllThemeData.progressIndicatorTheme,
       iconButtonTheme: AllThemeData.iconButtonTheme,
-      bottomNavigationBarTheme: AllThemeData.bottomNavBarTheme
+      bottomNavigationBarTheme: AllThemeData.bottomNavBarTheme,
+      textTheme:AllThemeData.textTheme
     );
   }
 }
