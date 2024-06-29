@@ -63,6 +63,7 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
                       return otpScreenController.isResendButtonAvailable
                           ? TextButton(
                         onPressed: () {
+                          otpScreenController.isResendButtonAvailable=false;
                          otpScreenController.getResendButton();
                         },
                         child: const Text('Resend Code'),

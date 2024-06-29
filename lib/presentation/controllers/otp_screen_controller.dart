@@ -10,7 +10,6 @@ class OtpScreenController extends GetxController{
       counter=10;
       return;
     }
-    print(counter);
     await Future.delayed(const Duration(seconds: 1));
     counter--;
     update();
